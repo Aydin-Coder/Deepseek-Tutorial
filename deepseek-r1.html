@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:Calibri; font-size:12pt }
+			p { margin:0pt }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+		</style>
+	</head>
+	<body>
+			<p style="widows:0; orphans:0; font-size:36pt">
+				<strong><span style="font-family:Helvetica-Bold; ">How to install Deepseek R1 on a local device/server</span></strong>
+			</p>
+			<p style="widows:0; orphans:0; font-size:24pt">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:18pt">
+				<span style="font-family:Helvetica">Method 1: Ollama</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:18pt">
+				<span style="font-family:Helvetica">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Step 1: Install Ollama</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="width:28.3pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="width:28.3pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Helvetica-Bold; ">MacOS: Ollama.ai</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="width:28.3pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Helvetica-Bold; ">Windows/Linux:</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="width:28.3pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong><strong><span style="width:28.35pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong><strong><span style="font-family:Helvetica-Bold; ">&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><span style="font-family:Courier; background-color: #D3D3D3; font-size:10.5pt">curl -fsSL https://ollama.ai/install.sh | sh</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ;" >ollama serve</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ;">ollama --version</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Step 2: Download Deepseek R1 (.GGUF)</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">1.</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><u><span style="font-family:Helvetica; color:#032d99">https://huggingface.co/unsloth/DeepSeek-R1-GGUF</span></u>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="font-family:Helvetica; color:#032d99">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">2. In the same folder create a model file named Modelfile with:</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ; font-size:10.5pt">FROM ./deepseek-r1.Q4_K_M.gguf</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica; font-size:10.5pt">Replace the filename with your actual GGUF file.</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">3. Build the Model</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ; font-size:10.5pt">ollama create deepseek-r1 -f Modelfile</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Step 3: Run Deepseek-R1</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="width:28.3pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="width:28.3pt; font-family:Helvetica-Bold; display:inline-block">&#xa0;</span></strong><span style="font-family:Courier; background-color:#D3D3D3 ; font-size:10.5pt">ollama run deepseek-r1</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">Step 4: Create WebUI</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<strong><span style="font-family:Helvetica-Bold; ">&#xa0;</span></strong>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:28.3pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">While Ollama offers command-line interaction with models like DeepSeek, a web-based interface can provide a more easy and user-friendly experience same as you are launching DeepSeek on a Web Browser. Ollama Web UI offers such an interface, simplifying the process of interacting with and managing your Ollama models.</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><strong><span style="font-family:Helvetica-Bold; ">Note</span></strong><span style="font-family:Helvetica">:</span><span style="font-family:Helvetica">&#xa0;</span><span style="font-family:Helvetica">This graphical interface can be especially helpful for users less comfortable with command-line tools, or for tasks where visual interaction is beneficial.</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">1. Create a Virtual Environment</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ; font-size:10.5pt">sudo apt install python3-venv</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ;">python3 -m venv ~/open-webui-venv</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Courier; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ;">source ~/open-webui-venv/bin/activate</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">2. Install Open WebUI</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ; font-size:10.5pt">pip install open-webui</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Helvetica">3. Start Server</span>
+			</p>
+			<p style="widows:0; orphans:0">
+				<span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="width:36pt; font-family:Helvetica; display:inline-block">&#xa0;</span><span style="font-family:Courier; background-color:#D3D3D3 ; font-size:10.5pt">open-webui serve</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:10.5pt">
+				<span style="font-family:Courier">&#xa0;</span>
+			</p>
+			<p style="widows:0; orphans:0; font-size:18pt">
+				<strong><span style="font-family:Arial-BoldMT; ">Open Link: </span></strong><u><span style="font-family:ArialMT; color:#053dcc"><a href="http://localhost:8080">here</a></span></u>
+			</p>
+</body>
+</html>
